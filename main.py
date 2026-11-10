@@ -16,7 +16,7 @@ def main() -> None:
         return
 
     # Проверка, что число положительное
-    if number <= 0:
+    if number < 0:
         print("Ошибка: число должно быть положительным.")
         return
 
@@ -28,7 +28,7 @@ def main() -> None:
         return
 
     # Вывод результата
-    print(f"Факториал числа {number} равен: {result}")
+    print(f"Факториал числа {number}! равен: {result}")
 
 if __name__ == "__main__":
     main()
