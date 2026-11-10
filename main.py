@@ -30,9 +30,13 @@ def read_positive_integer() -> int:
 def main() -> None:
     try:
         number = read_positive_integer()
-        # В работе приложения используется оптимизированная функция для работы с факториалами
-        result = factorial_lib(number)
-        # result = factorial(number)
+        # Демонстрация переключения на оптимизированную функцию для чисел больше 100
+        if number <= 100:
+            result = factorial(number)
+            print(f"Используется функция factorial")
+        else:
+            result = factorial_lib(number)
+            print(f"Используется функция factorial_lib")
 
         print(f"Факториал числа {number} равен: {result}")
 
